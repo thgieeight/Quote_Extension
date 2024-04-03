@@ -1,0 +1,94 @@
+.container {
+  width: 90%;
+  max-width: 2600px; /* Adjust as needed */
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 20px 40px; /* Ensure consistent padding on all sides */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Limit text width and handle overflow */
+.container header,
+.container section,
+.container footer {
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Switch styles */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Slider styles */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 15px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Footer styles */
+  footer {
+    margin-top: auto; /* Push footer to the bottom of the container */
+    text-align: center; /* Center align footer content */
+    width: 100%; /* Ensure footer spans full width */
+  }
+  
+  /* Footer link styles */
+  footer a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional styles for specific screen sizes */
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      max-width: 598px;
+    }
+  }
+  

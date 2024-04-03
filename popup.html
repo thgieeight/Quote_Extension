@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>etouq</title>
+  <link rel="icon" type="image/x-icon" href="favicon48.ico">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <label class="switch">
+      <input type="checkbox" id="dark-mode-toggle">
+      <span class="slider round"></span>
+    </label>
+    <header>
+      <h2>Daily Quote:</h2>
+      <p id="daily-quote"></p>
+    </header>
+    <section>
+      <h2>Select a Category:</h2>
+      <form id="category-form">
+        <select id="category-select">
+          <option value="friendship">Friendship</option>
+          <option value="motivational">Motivational</option>
+          <option value="funny">Funny</option>
+          <option value="Sad">Sad</option>
+          <option value="Breakup">Breakup</option>
+          <option value="Peace">Peace</option>
+
+        </select>
+        <button type="submit">Get Quote</button>
+      </form>
+      <p id="category-quote"></p>
+    </section>
+    <footer>
+      <p>Design and developed by <a href="https://github.com/thgieeight/Quote_Extension.git">Thgie Eight</a></p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

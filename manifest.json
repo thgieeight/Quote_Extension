@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "etouq",
+  "version": "1.0",
+  "description": "Etouq is a Chrome extension that delivers daily quotes to inspire and uplift your day. With a wide range of categories including Friendship, Motivational, Funny, Sad, and Peace, you can find the perfect quote to suit your mood or share with friends. Each day brings a new quote, handpicked to bring positivity to your browsing experience. \n\n Data Usage: Etouq utilizes local storage to store your daily quote preferences, ensuring that you receive a fresh quote every day without the need for additional permissions or data access. Your browsing experience remains private and secure, with no personal data collected or shared.",
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "favicon16.ico", 
+      "48": "favicon48.ico",
+      "128": "favicon128.ico"
+    }
+  },
+  "icons": {
+    "16": "favicon16.ico", 
+    "48": "favicon48.ico",
+    "128": "favicon128.ico"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
