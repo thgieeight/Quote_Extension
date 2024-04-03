@@ -83,6 +83,11 @@
   footer a:hover {
     text-decoration: underline;
   }
+
+/* Footer link styles for dark mode */
+.dark-mode footer a {
+  color: lightblue; /* Change color for dark mode */
+}
   
   /* Additional styles for specific screen sizes */
   @media screen and (max-width: 600px) {
